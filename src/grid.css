@@ -1,5 +1,5 @@
 .container {
-  width: 60%;
+  width: 50%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -7,8 +7,9 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  height: 350px;
 }
 
 .div1 {
@@ -37,7 +38,41 @@
 }
 .div9 {
   grid-area: 5 / 4 / 6 / 6;
+  overflow: hidden visible;
 }
 .div10 {
   grid-area: 1 / 1 / 6 / 4;
+}
+.div10 img {
+  border-radius: 10px;
+}
+.btn {
+  border: 1px solid white;
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.info {
+  height: 55px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.about {
+  height: 85px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.title-info {
+  color: #5c5c5c;
+}
+h2,
+h3 {
+  text-align: center;
+}
+.review {
+  text-align: center;
+  font-size: 40px;
 }
