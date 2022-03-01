@@ -1,0 +1,122 @@
+.connection,
+.signup {
+  margin-top: 100px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  border-radius: 10px;
+  font-size: 20px;
+}
+.connection img,
+.signup img {
+  width: 20px;
+  height: 20px;
+  top: -90px;
+  left: 10px;
+  position: relative;
+}
+.left {
+  text-align: left;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  margin-left: 0;
+  width: 50%;
+  background: rgb(31, 32, 35);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 32, 35, 1) 0%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  border-radius: 10px 0px 0px 10px;
+}
+.left h2 {
+  text-align: left;
+  padding-left: 30px;
+  font-size: 40px;
+}
+.right h2 {
+  padding-top: 24px;
+  text-align: left;
+  padding-left: 30px;
+  font-size: 40px;
+}
+.right {
+  padding-top: 100px;
+  width: 50%;
+  background: rgb(31, 32, 35);
+  background: linear-gradient(
+    0deg,
+    rgba(31, 32, 35, 1) 0%,
+    rgba(23, 23, 23, 1) 100%
+  );
+  border-radius: 0px 10px 10px 0px;
+  padding-bottom: 100px;
+}
+.left div {
+  display: flex;
+}
+.icon {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+div svg {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+.right form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.register {
+  width: 300px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 5px 25px;
+  margin: 5px;
+  border: none;
+  justify-content: center;
+  text-align: left;
+  font-size: 25px;
+}
+.password {
+  width: 120px;
+  font-size: 20px;
+}
+.btnConnexion {
+  background-color: #ff4655;
+  width: 350px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 10px;
+  border: none;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  background-color: #ff4655;
+  width: 350px;
+  height: 45px;
+  border-radius: 10px;
+  padding: 0px;
+  margin: 10px;
+  border: none;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+.noAcc:hover {
+  text-decoration: underline;
+}

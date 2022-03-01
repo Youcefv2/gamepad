@@ -29,7 +29,14 @@ a {
   border: none;
   box-shadow: 0px 0px 7px 1px white;
 }
+.search input[type="submit"] {
+  visibility: hidden;
+  cursor: pointer;
+}
 /* topbar.js */
+.favorite:hover {
+  text-decoration: underline;
+}
 .menu {
   display: flex;
   list-style: none;

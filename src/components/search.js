@@ -14,7 +14,6 @@ function Search() {
           <img src={Logo} alt="" className='logo'/>
           <form onSubmit={handleSubmit}>
           <input type="text" placeholder='Search for a game...'/>
-          <input className='searchBtn' type="submit" />
           </form>
           <p>Search 2 349 595 games</p>
         </div>

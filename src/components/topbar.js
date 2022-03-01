@@ -9,7 +9,7 @@ function TopBar() {
           <ul className='menu'>
           <a href="/"> <img src={Logo} alt="" /></a>
             <div className='navigation'>
-            <a href="/favorite"><li>My collection</li></a> 
+            <a href="/favorite" className='favorite'><li>My collection</li></a> 
             <a href="/signin"><li className='login'>Login</li></a> 
             </div>
           </ul>

@@ -54,6 +54,10 @@
   align-items: center;
   justify-content: center;
 }
+.btn:hover {
+  color: #ff4655;
+  border: 1px solid #ff4655;
+}
 .info {
   height: 55px;
   overflow: hidden;
