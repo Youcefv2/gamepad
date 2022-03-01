@@ -4,10 +4,11 @@ import { useState, useEffect } from "react";
 function Games() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
+  const apiKey = process.env.REACT_APP_UNSPLASH_KEY
   useEffect(() => {
     const fetchData = async () => {
         try {
-          const response = await axios.get("https://api.rawg.io/api/games?key=1a5199e7183e49b996f75abb1b1896b5");
+          const response = await axios.get("https://api.rawg.io/api/games?key=" + apiKey);
           setData(response.data);
           setIsLoading(false)
         } catch (error) {

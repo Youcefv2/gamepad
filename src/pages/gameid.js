@@ -13,10 +13,11 @@ function Gameid() {
     const [data, setData] = useState();
     const [isLoading, setIsLoading] = useState(true);
     const param = useParams().gameid
+    const apiKey = process.env.REACT_APP_UNSPLASH_KEY
     useEffect(() => {
     const fetchData = async () => {
         try {
-          const response = await axios.get("https://api.rawg.io/api/games/"+ param + "?key=1a5199e7183e49b996f75abb1b1896b5");
+          const response = await axios.get("https://api.rawg.io/api/games/"+ param + "?key=" + apiKey);
           setData(response.data);
           setIsLoading(false)
         } catch (error) {

@@ -8,11 +8,11 @@ function Searchpage() {
   const [data, setData] = useState();
   const [isLoading, setIsLoading] = useState(true);
   const param = useParams().gamename
-  console.log(param)
+  const apiKey = process.env.REACT_APP_UNSPLASH_KEY
   useEffect(() => {
       const fetchData = async () => {
           try {
-            const response = await axios.get('https://api.rawg.io/api/games?key=1a5199e7183e49b996f75abb1b1896b5&search='+ param)
+            const response = await axios.get('https://api.rawg.io/api/games?key=' + apiKey + '&search='+ param)
             setData(response.data);
             setIsLoading(false);
           } catch (error) {
@@ -39,7 +39,6 @@ return isLoading ? (
                     }else{
                       img = result.background_image
                     }
-                    console.log(result.background_image, result.name)
                     return (
                       <a href={'/game/'+ result.id}>
                         <ul key={result} >
